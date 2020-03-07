@@ -12,56 +12,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "com.example.trainingfaces.MESSAGE";
     private static final String TAG = MainActivity.class.getName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-//        LinearLayout linearLayout= new LinearLayout(this);
-//        linearLayout.setOrientation(LinearLayout.VERTICAL);
-
-        //ImageView firstImage = (ImageView) findViewById(R.id.imageView2);
-        //String titileName =
-
-
-//        for (int j = 1; j < 10; j++) {
-//
-//            //ImageView Setup
-//            ImageView imageView = new ImageView(this);
-//            //setting image resource
-//            imageView.setImageResource(R.drawable.angel_gao);
-//
-//
-//            //int imageResource = getResources().getIdentifier("@drawable/angel_gao", null, this.getPackageName());
-//            int imageResource = getResources().getIdentifier("d002_p00"+j, "drawable",this.getPackageName();
-//            imageView.setImageResource(imageResource);
-//
-//            //setting image position
-//            imageView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
-//                    LinearLayout.LayoutParams.WRAP_CONTENT));
-//
-//            linearLayout.addView(imageView);
-//
-//       }
-//        //ImageView Setup
-//        ImageView imageView = new ImageView(this);
-//        //setting image resource
-//        imageView.setImageResource(R.drawable.angel_gao);
-//
-//
-//        int imageResource = getResources().getIdentifier("@drawable/angel_gao", null, this.getPackageName());
-//        //int imageResource = getResources().getIdentifier("d002_p00"+j, "drawable",this.getPackageName();
-//        Log.d(TAG,"id is " + imageResource);
-//        imageView.setImageResource(imageResource);
-//
-//        //setting image position
-//        imageView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
-//                LinearLayout.LayoutParams.WRAP_CONTENT));
-//
-//        linearLayout.addView(imageView);
-//        setContentView(linearLayout);
     }
 
     private static int RESULT_LOAD_IMAGE = 1;
@@ -70,11 +26,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, trainingActivity.class);
         startActivity(intent);
 
-//        Intent i = new Intent(
-//                Intent.ACTION_PICK,
-//                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI, this, trainingActivity.class);
-//
-//        startActivityForResult(i, RESULT_LOAD_IMAGE);
     }
 
 
